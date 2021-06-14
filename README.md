@@ -4,5 +4,5 @@ Digital Market Package Generation Interview
 
 ## Author
 
-Matthew Bailey, admin@admin.com
+Matthew Bailey, matthew@alteroo.com
 

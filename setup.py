@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.DigiMarketPackageGen',
       version='0.0.1',
       description=('Digital Market Package Generation Interview'),
-      long_description='# docassemble.DigiMarketPackageGen\n\nDigital Market Package Generation Interview\n\n## Author\n\nMatthew Bailey, admin@admin.com\n\n',
+      long_description='# docassemble.DigiMarketPackageGen\r\n\r\nDigital Market Package Generation Interview\r\n\r\n## Author\r\n\r\nMatthew Bailey, matthew@alteroo.com\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Matthew Bailey',
       author_email='matthew@alteroo.com',

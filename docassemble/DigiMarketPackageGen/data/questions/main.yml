@@ -1,0 +1,47 @@
+metadata:
+  title: Default playground interview
+  short title: Test
+  comment: This is a learning tool.  Feel free to write over it.
+---
+objects:
+  - calc: Individual
+---
+question: Cost Scale
+subquestion: What increment method are we using?
+field: scaletype
+dropdown:
+  - Standard
+  - Goldilocks
+---
+question: Contribution
+subquestion: what is the base contribution amount?
+fields:
+  - Amount: calc.base
+    datatype: currency
+---
+mandatory: True
+code: |
+  calc.base
+  if scaletype == 'Standard':
+    calc.tier2 = calc.base * 1.5
+    calc.tier3 = calc.base * 1.75
+  else:
+    calc.tier2 = calc.base * 2.2
+    calc.tier3 = calc.base * 5
+  end_screen
+---
+attachment:
+  name: Digital Marketing Package Proposal
+  filename: DMP_Proposal
+  variable name: DMPdoc
+  valid formats:
+    - pdf
+    - docx
+  docx template file: Digital_Marketing_Packages_Proposal.docx
+---
+Event: end_screen
+question: Document Generation
+subquestion: |
+  Here is your document
+  
+  ${DMPdoc.pdf}

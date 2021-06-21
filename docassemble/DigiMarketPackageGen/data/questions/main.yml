@@ -30,18 +30,21 @@ code: |
     calc.tier3 = calc.base * 5
   end_screen
 ---
-attachment:
-  name: Digital Marketing Package Proposal
-  filename: DMP_Proposal
-  variable name: DMPdoc
-  valid formats:
-    - pdf
-    - docx
-  docx template file: Digital_Marketing_Packages_Proposal.docx
+#attachment:
+#  name: Digital Marketing Package Proposal
+#  filename: DMP_Proposal
+#  variable name: DMPdoc
+#  valid formats:
+#    - pdf
+#    - docx
+#  docx template file: Digital_Marketing_Packages_Proposal.docx
+#---
+template: content
+content file: Digital_Marketing_Packages_Proposal.md
 ---
 Event: end_screen
 question: Document Generation
 subquestion: |
   Here is your document
-  
-  ${DMPdoc.pdf}
+  ${content}
+#${DMPdoc.pdf}
